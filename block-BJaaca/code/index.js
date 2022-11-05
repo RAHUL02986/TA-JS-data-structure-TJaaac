@@ -6,7 +6,7 @@
 
 //  Re-assign the value of `character` variable to and object with the key `characterName` and value of "Arya"
  character = {
-    characterName : Arya,
+    characterName : "Arya",
  }
 // - A variable named `age` is predefined with value 20. Add a new key named `character-age` with the value of `age` variable i.e 20 (don't use the value 20)
 
@@ -42,7 +42,7 @@ character.changeIsAdult = function() {
 // - Add a new key with the name stored in variable `keyName` defined below i.e `playedBy` (use [] for computed property) and the value of "Maisie Williams"
 
 let keyName = 'playedby';
-character["keyName"] = "Maisie Williams";
+character[keyName] = "Maisie Williams";
 
 // - Using `alert` alert the value stored in key you added above `keyName` use the variable name to access
 alert(character[keyName]);
