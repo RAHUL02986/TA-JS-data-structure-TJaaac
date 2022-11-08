@@ -1,7 +1,7 @@
 // 1. Declare an empty array and store it in a variable.
   let number = [];
 // 2. Now check the type of empty array you declared above.
-number;
+console.log(typeof number);
 
 // 3. Create an array named `colors` that contains five different names of colors as strings.
 let colors = ["red", "blue", "orange", "green", "tomato"];
@@ -11,39 +11,40 @@ let colors = ["red", "blue", "orange", "green", "tomato"];
 console.log(colors[2]);
 
 // 6. Access the last color in the array and print it to the console using `console.log()`
-console.log(colors.length);
+console.log(colors[colors.length-1]);
 
 
 // 7. Write one line of code that changes the value of the first color in the list to "black" (overwriting the previous value).
  colors[0] = "black";
  console.log(colors[0]);
 // 8. Write one line of code that changes the value of the last color in the list to "ultraviolet" (overwriting the previous value).
- colors[4] = "ultravoilet";
- console.log(colors[4]);
+ colors[colors.length-1] = "ultravoilet";
+ 
 
 
 // 9. Now, Find the length of the array named `colors`.
-colors.length;
+console.log(`the lenght is ${colors.length}`);
 
 
 // 10. Create a new variable called fourthColor and set it equal to the fourth color in the list.
 
 let fourthColor = colors[3];
-colors[3] = fourthColor;
+
 
 // 11. Add another color to the end of the list.
-colors.push("yellow");
+colors[Colors.length] = "gray"
 
 // 12. Add another color to the beginning of the list (use array method array.unshift('gray'))
-colors.unshift('grey')
+colors.unshift('purple');
 
 // 13. Remove the first color from the starting of the array
 delete colors[0];
 // 14. Remove the last color from the end of list, and then print the length of the array to the console one more time.
-delete colors[6];
+delete colors[colors.length-1];
 console.log(colors.length);
 
 // 15. Remove the second color from the end of list.
+delete colors[colors.length-2];
 
 
 // 16. Write a for loop to iterate through every element in the array and print each element to the console.
@@ -51,6 +52,8 @@ console.log(colors.length);
     console.log(colors[i]);
   }
 // 17. Copying from that loop you just wrote, modify it to print every color's value and every color's index in this format: 3, purple or 0, blue etc.
+for(let i = 0; i < colors.length; i++){
+    console.log (`${i}: ${colors[i]}`);
 
 // 18. Write a for..of loop to iterate through every element in the array and print each element to the console.
  for(let color of colors){
@@ -61,6 +64,9 @@ console.log(colors.length);
    lastColor = colors[colors.length-1]
 
 // 20. Add a new color `tomato` to the index 45. And check the length of the array. Use `console.log` to print.
-colors.push("tomato");
+colors[45] = "tomato";
+
+console.log(colors.length);
+
 
 
