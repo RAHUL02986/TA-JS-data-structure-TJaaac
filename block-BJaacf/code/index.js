@@ -32,14 +32,14 @@ console.log(highestNumber);
  let even = [];
  for (let number of numbers){
     if(number % 2 === 0){
-     console.log(even.push(number));
+     console.log(even.push(number, "even"));
     }
  }
 // 7. Find the odd numbers in the array and print them to the console using console.log()
 let odd = [];
 for (let number of numbers){
    if(number % 2 !== 0){
-    console.log(odd.push(number));
+    console.log(odd.push(number, "odd"));
    }
 }
 
@@ -47,7 +47,7 @@ for (let number of numbers){
 let div = [];
 for (let number of numbers){
     if( number % 5 === 0) {
-        console.log(div.push(number));
+        console.log(div.push(number, "divisible by 5"));
     }
 }
 // 9. Log all the element of the array one by one
@@ -60,6 +60,6 @@ for (let i = 0; i < numbers.length; i++) {
 let divide = [];
 for(let number of numbers){
     if(number % 3 === 0){
-        console.log(divide.push(number));
+        console.log(divide.push(number, "divisible by 3"));
     }
 }
