@@ -45,8 +45,8 @@ console.log(person == personTwo); // false
 console.log(person === personTwo); // false
 console.log(person.address === personTwo.address); // true
 console.log(person.address == personTwo.address); // true
-console.log(personTwo.address.city); // 'San Jose'
-console.log(person.address.city); // 'San Jose'
+console.log(personTwo.address.city); // 'Navada'
+console.log(person.address.city); // 'Navada'
 console.log(person.address.city == personTwo.address.city); //true
 ```
 
@@ -78,8 +78,8 @@ console.log(person === personTwo); //false
 console.log(person.address === personTwo.address); // false
 console.log(person.address == personTwo.address); // false
 console.log(personTwo.address.city); // 'San Jose'
-console.log(person.address.city); // 'San Jose'
-console.log(person.address.city == personTwo.address.city); // true
+console.log(person.address.city); // 'Navada'
+console.log(person.address.city == personTwo.address.city); // false
 ```
 
 4. Clone the `blogs` variable into a new variable named `clonedBlogs`
@@ -135,7 +135,7 @@ var questions = [
 let questionClone = [
   {...questions[0],responses : [
     {...questions[0].responses}
-  ]};,
+  ]},
     {...questions[1],responses : [
     {...questions[1].responses}
   ]};
